@@ -14,9 +14,19 @@ if (!global.fetch) {
 // Initialize Gemini AI
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-// Middleware
-app.use(cors());
+// CORS configuration
+app.use(cors({
+  origin: ['https://inter-vue-now.vercel.app', 'http://localhost:3000'],
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
+
 app.use(express.json());
+
+// Root route for testing
+app.get('/', (req, res) => {
+  res.json({ message: 'InterVue API is running!' });
+});
 
 // Routes
 app.post('/api/generate-question', async (req, res) => {
