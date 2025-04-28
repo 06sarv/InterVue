@@ -17,7 +17,14 @@ Intervue is a full-stack web application that helps users practice interviews us
 - **Smooth animations and transitions**
 
 ## Screenshots
+### Landing Page
+![Landing Page](Demo/LandingPage.png)
 
+### Interview Page
+![Interview Page](Demo/InterviewPage.png)
+
+### Report Page
+![Report Page](Demo/ReportPage.png)
 
 
 ## Tech Stack
