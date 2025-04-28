@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.35rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 2.5rem;
+}
+
+.MuiContainer-root {
+  max-width: 1400px !important;
+  font-size: 1.55rem;
+}
+
+.MuiContainer-root * {
+  font-size: 1.55rem !important;
+}
+
+.MuiPaper-root {
+  padding: 64px !important;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.35rem;
+}
+
+.MuiTypography-root {
+  font-size: 1.35rem;
+}
+
+.MuiButton-root {
+  font-size: 1.25rem;
+  padding: 16px 36px;
+}
+
+.MuiTextField-root {
+  font-size: 1.25rem;
+}
+
+/* PDF/Print styles for the report */
+.pdf-report {
+  font-family: 'Arial', sans-serif;
+  color: #222;
+  background: #fff;
+  padding: 64px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.35rem;
+}
+
+.pdf-report h4, .pdf-report h6 {
+  color: #1976d2;
+  margin-bottom: 28px;
+  font-size: 2.7rem;
+}
+
+.pdf-report .MuiListItemText-root {
+  margin-bottom: 18px;
+}
+
+.pdf-report .MuiChip-root {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.pdf-report .MuiDivider-root {
+  margin: 32px 0;
+}
+
+.pdf-report .MuiTypography-root {
+  font-size: 1.35rem;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .pdf-report, .pdf-report * {
+    visibility: visible;
+  }
+  .pdf-report {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background: #fff;
+    box-shadow: none;
+  }
+}
+
+/* Make number input steppers (arrows) much larger */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 32px;
+  height: 32px;
+  background: #e3e3e3;
+  border-radius: 8px;
+  font-size: 2.2rem;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* For Firefox */
+input[type=number]::-moz-number-spin-box {
+  font-size: 2.2rem;
+  width: 32px;
+  height: 32px;
+}
