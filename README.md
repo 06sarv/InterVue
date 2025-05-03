@@ -45,7 +45,7 @@ Intervue is a full-stack web application that helps users practice interviews us
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/intervue.git
+   git clone https://github.com/06sarv/intervue.git
    cd intervue
    ```
 
